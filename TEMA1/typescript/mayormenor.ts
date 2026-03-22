@@ -1,0 +1,11 @@
+import readline from "node:readline/promises";
+import { stdin as input, stdout as output } from "node:process";
+const rl = readline.createInterface({ input, output }); 
+function mayormenor (a: number, b :number, c: number){
+    if (a> b && a > c) return '"Mayor : ${a}';
+    else if (b > a && b > c) return '"Mayor : {b}"' ;
+    else return ' Mayor :$ {c}"'
+}
+
+console.log ("****MAYOR MENOR****")
+const a = await rl.question
